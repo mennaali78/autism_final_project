@@ -35,3 +35,27 @@ a:hover {
 .hero .button1{
     background-color: rgba(137, 181, 111, 0.5)
 }
+.defination {
+    background-image: url(../images/download\ 1.png);
+  position: relative;
+    background-size: cover;
+  background-position: center;
+}
+.overlay {
+  
+  background-color:#ffc10712; 
+  width: 100%;
+  height: 100%;
+}
+.defination .content p{
+    font-size: 20px;
+}
+.env-factors .container .content h6 {
+    font-size: 25px;
+}
+.env-factors .container .content ul{
+    font-size: 20px;
+}
+.env-factors .container {
+    background-color:rgba(45 , 127, 224, 0.1);
+}

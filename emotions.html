@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/emotions.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+       <div class="nav py-3 fixed-top bg-white">
+        <div class="container d-flex justify-content-between">
+            <div class="logo w-25">
+             <img src="images/LOGO.png" class="w-100"/>
+            </div>
+            <div class="links w-50 py-3">
+             <ul class="d-flex justify-content-around list-unstyled">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="screening.html">Screening</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="progress.html">Progress</a></li>
+             
+             </ul>
+            </div>
+              <div class="nav py-3 fixed-top bg-white">
+        <div class="container d-flex justify-content-between">
+            <div class="logo w-25">
+             <img src="images/LOGO.png" class="w-100"/>
+            </div>
+            <div class="links w-50 py-3">
+             <ul class="d-flex justify-content-around list-unstyled">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="screening.html">Screening</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="progress.html">Progress</a></li>
+             
+             </ul>
+            </div>
+            <div class="logo">
+            <a href="profile.html">
+           <img src="images/child.jpg" class="w-100 child-img" />
+  </a>
+          </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="layout">
+           <aside class="sidebar">
+       <a href="progress.html" class="menu">Therapy Appointments</a>
+    <a href="communication.html" class="menu">Communications & Interactions</a>
+    <a href="speech.html" class="menu">Speech Development</a>
+    <a href="audio.html" class="menu">Response to Audio cues</a>
+    <a href="emotions.html" class="menu active">Identifying Emotions</a>
+    <a href="meltdown.html" class="menu">Meltdown Tracking</a>
+    <a href="materials.html" class="menu">Learning Materials</a>
+    </aside>
+  <main class="content">
+
+        <h2>Emotion Recognition / Matching Game</h2>
+
+        <div class="emotion-grid" id="gameBoard"></div>
+
+        <div class="score">
+            Score : <span id="score">0</span>/9
+        </div>
+
+    </main>
+
+    <aside class="observations">
+
+        <h3>Real world observations</h3>
+
+        <p id="todayDate"></p>
+
+        <label>Emotion recognized</label>
+        <select id="emotionRecognized">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Level of support</label>
+        <select id="supportLevel">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <label>Situation</label>
+        <textarea id="situation"></textarea>
+
+        <label>Child Response</label>
+        <textarea id="response"></textarea>
+
+        <button class="log-btn" id="logBtn">Log Observation</button>
+
+    </aside>
+
+</div>
+      <script src="js/emotions.js"></script>
+</body>
+</html>

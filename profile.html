@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auticare Dashboard</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/all.min.css">
+   
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+ <div class="nav pt-1 fixed-top bg-white">
+        <div class="container d-flex justify-content-between">
+            <div class="logo w-25">
+             <img src="images/LOGO.png" class="w-100"/>
+            </div>
+            <div class="links w-50 py-3">
+             <ul class="d-flex justify-content-around list-unstyled">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="screening.html">Screening</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="progress.html">Progress</a></li>
+             
+             </ul>
+            </div>
+            <div class="logo">
+            <a href="profile.html">
+           <img src="images/child.jpg" class="w-100 child-img" />
+  </a>
+          </div>
+        </div>
+    </div>
+  <div class="container3">
+
+      <div class="container">
+      
+          
+          <div class="left-panel">
+              <div class="avatar"></div>
+      
+              <div class="toggle-row">
+                  <span>Kids Mode</span>
+                  <label class="switch">
+                      <input type="checkbox" id="kidsMode">
+                      <span class="slider"></span>
+                  </label>
+              </div>
+      
+              <div class="child-card">
+                  <h3>Child Info</h3>
+                  <p>Name: Madison</p>
+                  <p>Age: 7</p>
+                  <p>Diagnosis: Moderate</p>
+              </div>
+          </div>
+         
+          <div class="center-panel">
+      
+              <h2>Medical History</h2>
+      
+              <ul id="medicalList">
+                  <li>Ophthalmological Evaluation Report</li>
+                  <li>Audiology & Hearing Assessment Report</li>
+                  <li>Neurological & Brain Evaluation Report</li>
+                  <li>Speech & Language Evaluation Report</li>
+              </ul>
+      
+              <h2>Progress Chart</h2>
+              <canvas id="progressChart"></canvas>
+      
+          </div>
+      
+             <div class="right-panel">
+      
+              <h3>Notification & Alerts</h3>
+      
+              <div class="toggle-row">
+                  <span>Progress Update</span>
+                  <label class="switch">
+                      <input type="checkbox" class="saveToggle">
+                      <span class="slider"></span>
+                  </label>
+              </div>
+      
+              <div class="toggle-row">
+                  <span>Appointment Reminder</span>
+                  <label class="switch">
+                      <input type="checkbox" class="saveToggle">
+                      <span class="slider"></span>
+                  </label>
+              </div>
+      
+              <button id="logoutBtn">Log Out</button>
+      
+          </div>
+      
+      </div>
+  </div>
+
+<div id="toast" class="toast"></div>
+
+<script src="js/profile.js"></script>
+</body>
+</html>

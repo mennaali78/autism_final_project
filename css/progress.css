@@ -1,0 +1,156 @@
+body {
+  padding-top: 100px;
+}
+.primary-color {
+    color:#6B7280;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #0a58ca;
+}
+.nav .logo{
+    width: 56px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+.layout{
+    display:flex;
+    gap:15px;            
+  
+    padding:0 20px;
+}
+
+.sidebar{
+    width:230px;
+    background:#eaf2fb;
+    padding:15px;
+    border-radius:20px;
+    height:fit-content;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.menu{
+    padding:12px 15px;
+    border-radius:20px;
+    background:#dce6f5;
+    text-decoration:none; 
+    color:#000;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.menu:hover{
+    background:#c8dbf3;
+}
+
+.menu.active{
+    background:#2b6cb0;
+    color:#fff;
+}
+
+
+
+.content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.calendar{
+    width:550px;
+    background:#fff;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    margin: auto;
+     margin-bottom:25px;
+}
+.calendar-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.calendar-header button{
+    border:none;
+    background:#f1f1f1;
+    padding:5px 10px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.calendar-header select{
+    padding:15px 40px;
+    border-radius:8px;
+    font-size:20px;
+}
+
+.days{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:6px;                
+}
+
+.day{
+    text-align:center;
+    padding:6px;             
+    border-radius:6px;
+    font-size:13px;
+    cursor:pointer;
+}
+
+.day:hover{
+    background:#e2e8f0;
+}
+
+.day.selected{
+    background:#000;
+    color:#fff;
+}
+
+.appointments{
+    width:100%;
+}
+.appointments .card{
+    background:#fff;
+    border-radius:20px;
+    padding:20px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:20px;
+    border:1px solid #cbd5e0;
+}
+
+.card img{
+    width:60px;
+    height:60px;
+    border-radius:12px;
+}
+
+.info{
+    flex:1;
+    margin-left:20px;
+}
+
+.date{
+    font-weight:500;
+}
+
+.location{
+    color:#555;
+}

@@ -1,0 +1,86 @@
+body {
+  padding-top: 100px;
+}
+.primary-color {
+    color:#6B7280;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #0a58ca;
+}
+.nav .logo{
+    width: 56px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+.layout{
+    display:flex;
+    gap:15px;            
+  
+    padding:0 20px;
+}
+
+.sidebar{
+    width:230px;
+    background:#eaf2fb;
+    padding:15px;
+    border-radius:20px;
+    height:fit-content;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.menu{
+    padding:12px 15px;
+    border-radius:20px;
+    background:#dce6f5;
+    text-decoration:none; 
+    color:#000;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.menu:hover{
+    background:#c8dbf3;
+}
+
+.menu.active{
+    background:#2b6cb0;
+    color:#fff;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card span:first-child {
+    font-weight: 500;
+}
+
+.card select {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #2f6cdf;
+    outline: none;
+}
