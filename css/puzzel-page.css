@@ -1,0 +1,109 @@
+
+body{
+  background:#f2f2f2;
+  font-family: Arial, sans-serif;
+  margin:0;
+}
+
+.container{
+  width:90%;
+  max-width:900px;
+  margin:100px auto;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:70px;
+  justify-items:center;
+}
+
+.puzzle{
+  width:200px;
+  height:180px;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:22px;
+  border-radius:15px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+  transition:0.3s ease;
+  cursor:pointer;
+}
+
+/* hover effect */
+.puzzle:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* click effect */
+.puzzle:active{
+  transform:scale(0.95);
+}
+
+/* الدواير */
+.circle{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  position:absolute;
+  background:inherit;
+  transition:0.3s;
+}
+
+/* الاتجاهات */
+.top{
+  top:-25px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.bottom{
+  bottom:-25px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.left{
+  left:-25px;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.right{
+  right:-25px;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* الفتحات */
+.cut{
+  background:#fffcfc;
+}
+
+/* ألوان */
+.letters{ background:#9ec3e6; }
+.animals{ background:#f2b199; }
+.feelings{ background:#e3b5d4; }
+.greetings{ background:#e9e3c7; }
+.food{ background:#c5b3e6; }
+.games{ background:#b7e3d4; }
+
+/* Responsive */
+@media(max-width:768px){
+  .container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width:480px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+
+  .puzzle{
+    width:150px;
+    height:150px;
+  }
+}

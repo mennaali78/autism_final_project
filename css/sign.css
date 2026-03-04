@@ -1,0 +1,96 @@
+.intro-page{
+background-image: url(../images/BgIntro.png);
+height: 100vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+body{
+margin: 0;
+}
+.sign-info{
+width: 335px;
+}
+.form-control{
+width: 250px;
+height: 20px;
+}
+.form-floating{   
+width: 300px;
+height: 40px;
+opacity: 1;
+margin: 25px;
+}
+.form-floating input{
+background-color: #ABD5FF;
+border-radius: 30px;
+border: none;
+}
+.title{
+margin-bottom:30px;
+padding-top: 50px;
+text-align: center;
+}
+
+.role-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.role-row.center {
+  justify-content: center;
+}
+.role-btn {
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: 1px solid #8fb5df;
+  background: transparent; /* مهم جداً */
+  color: #4a4a4a;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.role-btn:hover {
+  border-color: #5c95d6;
+}
+.role-btn.active {
+  background-color: #8fb5df;
+  color: white;
+}
+.log-btn{
+opacity: 1;
+top: 599px;
+left: 82px;
+
+border: none;
+text-align: center;
+}
+.log-btn button{
+background-color: #ABD5FF;
+margin: 10px;
+width:250px;
+height: 40px;
+border: none;
+border-radius: 30px;
+}
+.google{
+  margin-left: 70px;
+
+}
+.role-btn1{
+  padding: 4px 15px;
+  border-radius: 20px;
+  border: 1px solid #8fb5df;
+  background: transparent; 
+  color: #4a4a4a;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  text-align: center;
+
+
+}
+
+

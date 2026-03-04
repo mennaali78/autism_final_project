@@ -1,0 +1,42 @@
+.intro-page{
+    background-image: url(../images/BgIntro.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body{
+margin: 0;
+}
+.btns{
+background-color: #ABD5FF;
+ width: 335px;
+height: 47px;
+opacity: 1;
+top: 599px;
+left: 82px;
+border-radius: 30px;
+border: none;
+
+}
+.butons{
+    padding:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

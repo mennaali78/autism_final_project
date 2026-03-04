@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding-top: 100px;
+    background-color: #f8fbff;
+}
+
+/* = NAVBAR = */
+
+.logo {
+    width: 120px;
+}
+
+.profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+  li a:hover{
+    color: #2b6cb0 !important;
+
+}
+
+/* = LAYOUT = */
+
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* = SIDEBAR = */
+
+.sidebar {
+    width: 240px;
+    background: #eaf2fb;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: fit-content;
+}
+
+.menu {
+    padding: 12px;
+    border-radius: 20px;
+    background: #dce6f5;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.menu:hover {
+    background: #c8dbf3;
+}
+
+.menu.active {
+    background: #2b6cb0;
+    color: white;
+}
+
+/* = MAIN = */
+
+.main-content {
+    flex: 1;
+}
+
+/* = AGE TABS = */
+
+.age-tabs {
+    margin-bottom: 40px;
+}
+
+.age-tabs .nav-link {
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.age-tabs .nav-link.active {
+    color: #2b6cb0;
+    border-bottom: 3px solid #2b6cb0;
+}
+
+/* = CARDS = */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.learning-card {
+    background-color: #ABD5FF;
+    border-radius: 20px;
+    padding: 25px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+}
+
+.learning-card p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.icons i {
+    font-size: 25px;
+    background: white;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    background: #2b6cb0;
+    color: white;
+}
+
+/* = RESPONSIVE = */
+
+@media (max-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+

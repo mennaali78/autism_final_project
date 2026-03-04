@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>
+            autiCare
+
+        </title>
+        <link rel="icon" href="../imgs/Logo.jpg" type="image/png">
+     
+        <meta charset="UTF-8">
+<link rel="stylesheet" href="../css/sign.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/all.min.css">
+<link rel="stylesheet" href="./js/index.js">
+
+    </head>
+    <body>
+<main>
+  
+
+    <div class="intro-page">
+        <div class="sign-info ">
+            <div class="heading ">
+            <div class="title  ">
+            <h6>Sign Up</h6>
+        </div>
+        </div>
+        <div class="form-floating mb-1"> 
+
+  <input type="email" class="form-control mb-3 " id="floatingInput" placeholder="name">
+  <label for="floatingInput">First Name</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control " id="floatingPassword" placeholder="name">
+  <label for="floatingPassword">Last Name</label>
+</div>
+        
+         <div class="form-floating ">
+  <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+
+<div class="form-floating">
+  <input type="password" class="form-control  " id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+
+</div>
+<div class="role-container">
+  
+  <div class="role-row ">
+    <button class="role-btn">Care Giver</button>
+    <button class="role-btn">Doctor</button>
+  </div>
+
+  <div class="role-row center">
+    <button class="role-btn">Guest</button>
+  </div>
+
+</div>
+
+<div class="log-btn">
+  <a href="../Html/home.html"> <button class="btns 
+    " type="button">Sign Up</button></a>
+</div>
+<div class="pragraph text-center p-2">
+<p class="text-black-50">already have an account ?<a href="../Html/log.html" class="text-decoration-none">log in</a> </p>
+
+</div>
+<div class="google ">
+<a href=""> <button class="role-btn1"> Sign Up With Google</button></a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+   
+
+
+
+
+</main>
+<script src="../Html/js/index.js"></script>
+<script>
+  const buttons = document.querySelectorAll(".role-btn");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
+</script>
+    </body>
+ </html> 
+
+

@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding-top: 100px;
+    background-color: #f8fbff;
+}
+
+/* = NAVBAR = */
+
+.logo {
+    width: 120px;
+}
+
+.profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+  li a:hover{
+    color: #2b6cb0 !important;
+
+}
+/* = SIDEBAR = */
+
+.sidebar {
+    width: 240px;
+    background: #eaf2fb;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: fit-content;
+}
+
+.menu {
+    padding: 12px;
+    border-radius: 20px;
+    background: #dce6f5;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.menu:hover {
+    background: #c8dbf3;
+}
+
+.menu.active {
+    background: #2b6cb0;
+    color: white;
+}
+/* = RESPONSIVE = */
+
+@media (max-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ================= LAYOUT ================= */
+
+.section-wrapper{
+    padding:20px 40px;
+}
+/* ================= MAIN CARD ================= */
+
+.main-card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.main-card label{
+    font-weight:600;
+    margin-top:15px;
+}
+
+.form-select{
+    border-radius:12px;
+    padding:10px;
+}
+
+input[type="range"]{
+    width:100%;
+    accent-color:#2f6fcf;
+}
+
+.checkbox-group{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.log-btn{
+    margin-top:35px;
+    padding:12px 35px;
+    border-radius:30px;
+    border:2px solid #2f6fcf;
+    background:white;
+    color:#2f6fcf;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.log-btn:hover{
+    background:#2f6fcf;
+    color:white;
+}
+
+/* ================= RIGHT PANEL ================= */
+
+.right-panel{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.calendar{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:10px;
+    margin-top:15px;
+}
+
+.calendar-day{
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    font-size:14px;
+}
+
+.calendar-day.active{
+    background:#ff4d4d;
+    color:white;
+}
+
+.stat-number{
+    font-size:28px;
+    font-weight:700;
+    color:#ff4d4d;
+}
+
+.trigger-title{
+    color:#ff4d4d;
+    font-weight:600;
+    margin-top:20px;
+}

@@ -41,7 +41,11 @@ a {
 .avatar{
     width:120px;
     height:120px;
+<<<<<<< Updated upstream
     background:url("https://i.pravatar.cc/150?img=5") center/cover;
+=======
+    background:url("../images/طفل.jpg") center/cover;
+>>>>>>> Stashed changes
     border-radius:20px;
     margin:auto;
 }
